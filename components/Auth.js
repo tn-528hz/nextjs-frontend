@@ -42,7 +42,7 @@ export default function Auth() {
   const authUser = async (e) => {
     e.preventDefault();
     if (isLogin) {
-      login;
+      login();
     } else {
       try {
       await fetch(`${process.env.NEXT_PUBLIC_RESTAPI_URL}api/register/`, {
